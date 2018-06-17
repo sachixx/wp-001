@@ -1,0 +1,288 @@
+body {
+    font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+ul, li ,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #333333;
+    text-decoration: none;
+}
+a:hover{
+    color: #999999;
+    text-decoration: none;
+}
+a:hover img{
+    opacity: 0.7;
+}
+#main-v {
+    margin-top: 3em;
+    padding: 3em 0 3em;
+}
+
+#sec-post {
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+#main-v .contents {
+    /*  width: 1044px;
+        margin: 20px auto;*/
+    width: 90%;
+    max-width: 63em;
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+}
+
+#main-v .contents a {
+    position: relative;
+    display: block;
+    /* height: 293px;*/
+}
+
+#main-v .contents .slider a .sliderText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: #000;
+    display: block;
+    color: #fff;
+    width: 100%;
+    min-height: 55px;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    filter: alpha(opacity=50);
+    -ms-filter: "alpha(opacity=50)";
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.slider-box .slider a .sliderText .in {
+   margin:20px;
+}
+
+.slider-box .slider img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-box .slider a .sliderText .tag {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+#sec-post .contents {
+    width: 90%;
+    max-width: 64em;
+    margin: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    opacity: .75;
+    color: #000000 !important;
+}
+
+/* Content
+    --------------------------------------------------------- */
+
+.postList article {
+    width: 320px;
+    float: none;
+    margin: 0 0 40px 0;
+}
+
+.postList article:nth-child(even) {
+    margin: 0 0 40px 0;
+}
+    #sec-post article {
+        margin: 0 0 3em 0;
+    }
+
+#sec-post article a {
+    display: block;
+    position: relative;
+}
+
+#sec-post article figure {
+    padding: 0;
+    margin: 0 0 10px 0;
+    background: #fff;
+    line-height: 0;
+}
+
+#sec-post article figure img{
+    width: 100%;
+}
+
+#sec-post .postCategory {
+    font-size: 10px;
+}
+
+#sec-post .postTitle {
+    font-size: 15px;
+    margin: 2px 0;
+}
+
+#sec-post a:hover .postTitle {
+    text-decoration: underline;
+}
+
+#sec-post time {
+    font-size: 10px;
+}
+
+#sec-post .likeNumber {
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(images/common/icon_note.png) no-repeat left 50%;
+    padding: 0 0 0 15px;
+}
+
+#magazine {
+    margin: 0 0 30px 0;
+}
+
+#works {
+    margin: 0 0 30px 0;
+}
+
+#study {
+    margin: 0 0 30px 0;
+}
+
+
+
+/*-------------------
+micro clearfix
+-------------------*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    /*これで解決させる*/
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+
+/* For IE 6/7 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/* タブレット縦サイズ 768px(16×48em)~ smサイズ */
+
+@media screen and (min-width:48em) {}
+
+
+/* タブレット横サイズ 1024px(16×64em)~ mdサイズ */
+
+@media screen and (min-width:64em) {
+
+
+
+    .container {
+        max-width: 1024px !important;
+    }
+    .slider-box .slider img {
+    /*  height: auto;
+      width: 100%;*/
+    height: 300px;
+}
+    #sec-post {
+        padding: 3em 0 3em;
+        width: 43em;
+        margin: 0 auto;
+    }
+    #sec-post article {
+        width: 320px;
+        float: left;
+        margin: 0 40px 40px 0;
+    }
+    #sec-post article:nth-child(even) {
+        margin: 0 0 40px 0;
+    }
+}
+
+
+
+/* Single.php
+--------------------------------------------------------- */
+#post-entry {
+    margin: 4em 0;
+}
+#post-entry .contents{
+        width: 90%;
+    max-width: 640px;
+    margin: auto;
+}
+#post-entry figure {
+    margin: 0;
+}
+#post-entry figure img{width: 100%;
+    height: auto;
+}
+#post-entry .text-area{
+
+}
+
+@media screen and (min-width:64em) {
+#post-entry .contents{
+        width: 90%;
+
+}
+
+    }
+.category-icon a{
+    color: #FFFFFF;
+}
+.category-icon.no{
+    background-color: #333333;
+}
+
+/* breadcrumb
+--------------------------------------------------------- */
+ul#breadcrumb{
+    font-size: 0.8em;
+    margin-bottom: 1em;
+
+}
+
+ul#breadcrumb li{
+    float: left;
+    margin-right: 1em;
+}

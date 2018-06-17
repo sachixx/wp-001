@@ -1,0 +1,441 @@
+/*
+Theme Name: sachix-02
+Description:テーマの説明文
+Theme URI: テーマと関連するページのURL
+Author: 作成者
+Author URI: 作成者と関連するページのURL
+Version: バージョン
+License: ライセンス
+License URI: ライセンスのURL
+*/
+
+.container {
+    max-width: 1024px !important;
+}
+
+
+
+/* breadcrumb
+--------------------------------------------------------- */
+
+ul#breadcrumb {
+    width: 90%;
+    max-width: 1024px;
+    margin-top: 2em;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    margin: 3em auto 1.5em auto;
+    color: #999999;
+}
+
+
+ul#breadcrumb li {
+    float: left;
+}
+
+ul#breadcrumb li:before {
+    content: " > ";
+    margin: 0 5px;
+    font-size: 1.2em;
+    -webkit-transform: scale(0.5, 1.0);
+    -moz-transform: scale(0.5, 1.0);
+    -ms-transform: scale(0.5, 1.0);
+    transform: scale(0.5, 1.0);
+    display: inline-block;
+}
+
+ul#breadcrumb li:first-child:before {
+    content: "";
+    margin: 0;
+}
+
+
+@media screen and (min-width:64em) {
+    ul#breadcrumb {
+        margin: 3.5em auto 3em auto;
+    }
+}
+
+
+
+/************/
+
+h1,
+h2,
+h3,
+a {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+main {
+    margin: 5em auto 0 auto;
+    width: 90%;
+    max-width: 1024px;
+}
+
+.title {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #FFFFFF;
+    /* width: 100%; */
+    background-color: #999999;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+#sec-allpost,
+#sec-newpost {
+    padding: 0 0 5em;
+}
+
+#sec-allpost .contents,
+#sec-newpost .contents {
+    width: 90%;
+    max-width: 63em;
+    margin: auto;
+}
+
+
+/*-----------------------------
+.newpost-box
+-----------------------------*/
+
+.newpost-box article {
+    overflow: hidden;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    margin-top: 1px;
+    cursor: pointer;
+    position: relative;
+}
+
+.newpost-box article:hover {
+    background: #fafafa;
+}
+
+.newpost-box article h2 {
+    font-size: 14px;
+    padding-left: 2em;
+}
+
+.newpost-box article h2 a {
+
+}
+
+.newpost-box article h2:hover {
+    color: #666;
+}
+
+.newpost-box .newpost-title{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+article a {
+    width: 55%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+
+article span.newpost-labels {
+    font-size: 11px;
+    right: 0;
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    position: absolute;
+    top: 33%;
+    font-weight: bold;
+}
+
+
+/*-----------------------------
+.allpost-box
+-----------------------------*/
+
+.allpost-box div {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+}
+
+.allpost-box div:hover {
+    background: #fafafa
+}
+
+.allpost-box div:nth-of-type(1,3) {
+    border-right: 1px solid #eee;
+}
+
+.allpost-box div ul {
+    margin: 0;
+    padding: 0;
+}
+
+.allpost-box div ul li {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+}
+
+.allpost-box div ul li a {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    color: #666;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
+.allpost-box div ul li a:hover {
+    text-decoration: none;
+    background: #fff
+}
+
+.link_allpost {
+    width: 100%;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    transition: all 300ms 0s ease;
+}
+
+.allpost-box h3 {
+    color: #333;
+    font-size: 1em;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.5em;
+}
+
+.allpost-box .link_allpost {
+    color: #333;
+    float: right;
+}
+
+
+
+@media only screen and (max-width: 480px) {}
+
+@media screen and (min-width:64em) {
+
+    .allpost-box div {
+        width: 50%;
+        float: left;
+    }
+}
+
+
+
+/*____Page layout___________________________*/
+
+main {
+    margin: 0 auto 0 auto;
+    width: 90%;
+    max-width: 640px;
+}
+
+#post-entry {}
+
+#post-entry .cf{
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+#post-entry h1 {
+    font-weight: bold;
+    font-size: 2em;
+    font-weight: bold;
+    width: 100%;
+}
+#post-entry .category-icon a{
+    float: right;
+    text-align: right;
+    padding-top: 
+}
+#post-entry h2 {
+    font-size: 1.25em;
+    font-weight: bold;
+    border-left: 1px solid #75bd3f;
+    position: relative;
+    padding: 0 0 0 35px;
+    margin: 0 0 1.5em 0;
+}
+
+#post-entry h2:before {
+    content: "";
+    display: inline-block;
+    border-top: 1px solid #75bd3f;
+    position: absolute;
+    ;
+    left: 0;
+    width: 20px;
+    top: 50%;
+}
+
+#post-entry .post-content h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0 0 1.5em 0;
+}
+#post-entry .post-content p{
+    margin-bottom: 2em;
+}
+#other-recommend {
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    margin-top: 1.8em;
+}
+
+#other-recommend h3 {
+    border-left: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 15px 15px 15px 28px;
+    background: #fcfcfc;
+    border-left: 1px solid #eee;
+    font-size: 1em;
+}
+
+#other-recommend h3:before {
+    content: none;
+}
+
+#other-recommend ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+#other-recommend ul li {
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #eee;
+}
+
+#other-recommend ul li:hover {
+    background: #fff;
+}
+
+#other-recommend ul li a {
+    font-size: 0.9em;
+    padding: 15px 20px 15px 20px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+#other-recommend ul li a:hover {
+    color: #333333;
+    text-decoration: none
+}
+
+#other-recommend ul li.and_more {
+    background: #f3f3f3;
+}
+
+#other-recommend ul li.and_more:hover {
+    background: #ebebeb;
+}
+
+#other-recommend ul li.and_more a {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+    color: #666;
+}
+
+#other-recommend ul li.and_more a:hover {
+    color: #333;
+}
+
+
+/*-------------------
+micro clearfix
+-------------------*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    /*これで解決させる*/
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+
+/* For IE 6/7 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/*-------------------
+micro clearfix
+-------------------*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    /*これで解決させる*/
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+
+/* For IE 6/7 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}

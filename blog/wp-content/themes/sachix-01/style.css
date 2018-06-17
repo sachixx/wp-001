@@ -1,0 +1,399 @@
+/*
+Theme Name: sachix-01
+Description:テーマの説明文
+Theme URI: テーマと関連するページのURL
+Author: 作成者
+Author URI: 作成者と関連するページのURL
+Version: バージョン
+License: ライセンス
+License URI: ライセンスのURL
+*/
+
+.container {
+    max-width: 1024px !important;
+}
+
+
+/*-------------------
+.category-icon
+-------------------*/
+
+.category-icon a {
+    color: #FFFFFF;
+}
+
+.category-icon.no {
+    background-color: #333333;
+}
+
+.category-icon.child {
+    background-color: #339933;
+}
+
+.category-icon.food {
+    background-color: #ff9900;
+}
+
+.category-icon.lifestyle {
+    background-color: #cc0099;
+}
+
+.category-icon.goout {
+    background-color: #996600;
+}
+
+
+
+/*-------------------
+#main-v 
+-------------------*/
+
+#main-v {
+    padding: 0 0 3em;
+}
+
+#main-v .contents {
+    width: 90%;
+    max-width: 63em;
+    margin: auto;
+}
+
+
+
+
+
+
+/*-------------------
+#main-v .slider-box 
+-------------------*/
+
+.slider-box .slider a {
+    position: relative;
+    display: block;
+}
+
+.slider-box .slider a .sliderText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: #000;
+    display: block;
+    color: #fff;
+    width: 100%;
+    min-height: 55px;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    filter: alpha(opacity=50);
+    -ms-filter: "alpha(opacity=50)";
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.slider-box .slider a .sliderText .in {
+    margin: 20px;
+}
+
+.slider-box .slider a .sliderText .tag {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.slider-box .slider img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-box .slick-prev:before,
+.slider-box .slick-next:before {
+    opacity: .75;
+    color: #000000 !important;
+}
+
+
+
+@media screen and (min-width:64em) {
+    .slider-box .slider img {
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+
+/*-------------------
+#sec-post
+-------------------*/
+
+#sec-post {
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+#sec-post .contents {
+    width: 90%;
+    max-width: 64em;
+    margin: auto;
+}
+
+
+@media screen and (min-width:64em) {
+    #sec-post {
+        padding: 0 0 3em;
+        width: 48em;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+/*-------------------
+#sec-post article
+-------------------*/
+
+#sec-post article {
+    margin: 0 0 3em 0;
+    position: relative;
+    display: block;
+}
+
+#sec-post article a {}
+
+#sec-post article figure {
+    padding: 0;
+    margin: 0 0 10px 0;
+    background: #fff;
+    line-height: 0;
+}
+
+#sec-post article figure img {
+    width: 100%;
+}
+
+#sec-post article .postCategory {
+    font-size: 10px;
+}
+
+#sec-post article .postTitle {
+    font-size: 15px;
+    margin: 2px 0;
+}
+
+#sec-post article a:hover .postTitle {
+    text-decoration: underline;
+}
+
+#sec-post article time {
+    font-size: 10px;
+}
+
+#sec-post .category-icon {
+    position: absolute;
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    top: 0.5em;
+    left: -0.5em;
+}
+
+
+@media screen and (min-width:64em) {
+    #sec-post article {
+        width: 320px;
+        float: left;
+        margin: 0 40px 40px 0;
+    }
+    #sec-post article:nth-child(even) {
+        margin: 0 0 40px 0;
+    }
+}
+
+
+
+
+
+
+
+
+/* Single.php
+--------------------------------------------------------- */
+
+
+/*-------------------
+#post-entry
+-------------------*/
+
+#post-entry {
+    margin: 0 0 5em 0;
+}
+
+#post-entry .contents {
+    width: 90%;
+    max-width: 640px;
+    margin: auto;
+}
+
+@media screen and (min-width:64em) {
+    #post-entry .contents {
+        width: 90%;
+    }
+}
+
+
+
+
+
+/*-------------------
+#post-entry figure
+-------------------*/
+
+#post-entry .img-area {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+#post-entry .img-area .category-icon {
+    position: absolute;
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    top: 0.5em;
+    left: -0.5em;
+    font-size: 0.8em;
+}
+
+
+#post-entry .img-area figure {
+    margin: 0;
+}
+
+#post-entry .img-area figure img {
+    width: 100%;
+    height: auto;
+}
+
+#post-entry .text-area .title {
+    margin-bottom: 1em;
+}
+
+#post-entry .text-area .title h1 {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+#post-entry .text-area .title time {
+    font-size: 0.9em;
+    color: #999999;
+}
+
+#post-entry .text-area h2 {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1.25em;
+}
+
+#post-entry .text-area h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    border-left: 5px solid #333333;
+    padding-left: 1em;
+}
+
+#post-entry .text-area p {
+    margin-bottom: 1.25em;
+}
+
+
+/* breadcrumb
+--------------------------------------------------------- */
+
+ul#breadcrumb {
+    width: 90%;
+    max-width: 1024px;
+    margin-top: 2em;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    margin: 3em auto 1.5em auto;
+    color: #999999;
+}
+
+
+ul#breadcrumb li {
+    float: left;
+}
+
+ul#breadcrumb li:before {
+    content: " > ";
+    margin: 0 5px;
+    font-size: 1.2em;
+    -webkit-transform: scale(0.5, 1.0);
+    -moz-transform: scale(0.5, 1.0);
+    -ms-transform: scale(0.5, 1.0);
+    transform: scale(0.5, 1.0);
+    display: inline-block;
+}
+
+ul#breadcrumb li:first-child:before {
+    content: "";
+    margin: 0;
+}
+
+
+@media screen and (min-width:64em) {
+    ul#breadcrumb {
+        margin: 3.5em auto 3em auto;
+    }
+}
+
+
+
+
+/* #toc mokuji
+--------------------------------------------------------- */
+
+/*toc*/
+
+#toc{
+    border: 1px solid #CCCCCC;
+    padding: 0.5em;
+    font-size: 0.9em;
+    margin-bottom: 3em;
+    
+    }
+
+
+
+    #toc a {
+  
+        
+        }
+
+#toc ol{margin: 0;
+margin-left: 1em;
+padding: 0;
+padding-left: 1em;}
+
+
+#toc ol li{
+    margin-bottom:.2em !important;
+    list-style: inherit;
+    
+}
+
+#toc li+ol{margin-bottom:1em;margin-left:1em;}
+
+#toc li+ol li a{}
+
+#toc ol ol:last-child{
+    margin-bottom: 0;
+}
+
+.no-toc{display:none !important;}
+
+

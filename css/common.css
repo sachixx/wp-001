@@ -1,0 +1,79 @@
+body {
+    font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+ul, li ,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #333333;
+    text-decoration: none;
+}
+a:hover{
+    color: #999999;
+    text-decoration: none;
+}
+a:hover img{
+    opacity: 0.7;
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 2em 0;
+    background-color: #CCCCCC;
+}
+
+footer .contents {
+    width: 90%;
+    max-width: 63em;
+    margin: auto;
+}
+footer p{
+    font-size: 0.9em;
+    color: #333333;
+}
+/*-------------------
+micro clearfix
+-------------------*/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    /*これで解決させる*/
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+
+/* For IE 6/7 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
