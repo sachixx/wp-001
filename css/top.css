@@ -1,0 +1,33 @@
+/*-------------------
+#main-v 
+-------------------*/
+
+#main-v {
+    padding: 10em 0;
+    text-align: center;
+
+}
+
+#main-v .contents {
+    width: 90%;
+    max-width: 63em;
+    margin: auto;
+}
+
+#main-v .contents .title{
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#main-v .contents ul{
+    margin: 0 auto;
+    display: inline-block;
+}
+#main-v .contents ul li{
+    float: left;
+    margin-right: 2em;
+}
+#main-v .contents ul li:last-child{
+    margin-right: 0;
+}
